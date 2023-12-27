@@ -8,6 +8,8 @@
   --gutter-base: 1rem;
   --gutter-large: 2rem;
   --gutter-xl: 3rem;
+
+  --font-display: "Playfair Display", serif;
 }
 
 * {
@@ -140,4 +142,44 @@ header {
 .ourstory-main p {
   color: var(--text-color);
   max-width: 70ch;
+}
+
+.coffee {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.coffee-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: var(--gutter-large);
+}
+
+.coffee-content-title {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--text-color);
+  line-height: 1.1;
+  text-align: right;
+}
+
+.coffee-content-description {
+  max-width: 65ch;
+  color: var(--text-color);
+  text-align: right;
+}
+
+.coffee-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coffee-image img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
 }
