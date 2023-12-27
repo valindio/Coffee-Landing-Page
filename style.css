@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap");
+
+:root {
+  --primary-color: #deab5f;
+  --secondary-color: #312e2e;
+  --bg-color: #100e0f;
+  --text-color: #fff;
+  --gutter-base: 1rem;
+  --gutter-large: 2rem;
+  --gutter-xl: 3rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+button {
+  padding: 10px 30px;
+  background: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid var(--text-color);
+  color: var(--bg-color);
+  cursor: pointer;
+  transition: all 1s;
+}
+
+button:hover {
+  background: var(--secondary-color);
+  /* border: 1px solid var(--text-color); */
+  color: var(--text-color);
+}
+
+body {
+  background: var(--bg-color);
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  color: var(--text-color);
+  /* padding-top: var(--gutter-base); */
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+li a {
+  margin-left: var(--gutter-xl);
+  padding-bottom: var(--gutter-base);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+li a:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gutter-base);
+  height: calc(100vh - 60px);
+  background-image: url(./Image/image1.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.header-title {
+  position: absolute;
+  top: 4rem;
+  line-height: 1.1;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-color);
+  font-family: "Playfair Display", serif;
+}
+
+.header-cta {
+  position: absolute;
+  bottom: 2rem;
+}
+
+.ourstory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.ourstory-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gutter-xl);
+}
+
+/* .ourstory-main:last-child {
+  margin-top: var(--gutter-base);
+} */
+
+.ourstory-title {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  color: var(--text-color);
+}
+
+.ourstory-main p {
+  color: var(--text-color);
+  max-width: 70ch;
+}
