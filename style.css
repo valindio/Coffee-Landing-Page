@@ -183,3 +183,66 @@ header {
   height: 500px;
   object-fit: cover;
 }
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gutter-large);
+  /* height: 100vh; */
+}
+
+.products-title {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--text-color);
+}
+
+.cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: var(--gutter-large);
+}
+
+.card {
+  display: flex;
+  padding: var(--gutter-base);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+}
+
+/* .card-image {
+  position: absolute;
+  top: -120px;
+} */
+
+.card-image img {
+  width: 200px;
+  height: 200px;
+}
+
+.card-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.card-items {
+  margin-top: 1rem;
+}
+
+.card-items-lists {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-base);
+}
+
+.card-items-lists .item {
+  text-align: center;
+  color: var(--text-color);
+}
