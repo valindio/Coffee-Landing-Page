@@ -246,3 +246,45 @@ header {
   text-align: center;
   color: var(--text-color);
 }
+
+footer {
+  margin-top: var(--gutter-xl);
+}
+
+.footer-main {
+  display: flex;
+  margin-bottom: var(--gutter-large);
+  justify-content: center;
+  align-items: start;
+  gap: var(--gutter-large);
+}
+
+.footer-main > div {
+  width: 400px;
+}
+
+.footer-main h3 {
+  /* display: var(--font-display); */
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.footer-main h3 > span {
+  color: var(--primary-color);
+}
+
+.footer-main p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.createdby p {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.createdby p > a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
